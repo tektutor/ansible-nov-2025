@@ -1,6 +1,5 @@
 FROM docker.io/ubuntu:24.04
-LABEL maintainer="Jeganathan Swaminathan" 
-LABEL email="jegan@tektutor.org"
+LABEL maintainer="Jeganathan Swaminathan jegan@tektutor.org"
 
 RUN apt-get update && apt-get install -y openssh-server python3
 RUN mkdir -p /var/run/sshd
