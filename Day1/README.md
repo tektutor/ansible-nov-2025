@@ -54,6 +54,13 @@ sudo snap install code --classic
 
 ## Lab - Writing a hello world python program
 
+In your home directory on the linux box
+```
+cd /home/student
+mkdir -p python
+cd python
+```
+
 Create a file named hello.py with the below code using 
 ```
 #!/usr/bin/python3
