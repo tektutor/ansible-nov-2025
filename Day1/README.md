@@ -45,3 +45,22 @@ Expected output
 python3 --version                  
 Python 3.13.3  
 </pre>
+
+## Lab - Installing Visual studio code editor in your lab machine
+```
+sudo snap install code --classic
+```
+
+## Lab - Writing a hello world python program
+
+Create a file named hello.py with the below code using 
+```
+#!/usr/bin/python3
+
+print("Hello Python !")
+```
+
+Run it
+```
+python3 hello.py
+```
