@@ -47,6 +47,7 @@ Python 3.13.3
 </pre>
 
 ## Lab - Installing Visual studio code editor in your lab machine
+When it prompts for password, type rps@12345
 ```
 sudo snap install code --classic
 ```
