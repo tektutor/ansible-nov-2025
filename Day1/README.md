@@ -186,3 +186,47 @@ Expected output
 ## Lab - Python Function
 
 ## Lab - Python class ( user-defined data-type )
+
+## Info - Write a RPN Calculator in Python
+Note
+<pre>
+- the RPN Calculator will accept math expression in Reverse Polish Notation
+- the input will be only a string
+- Reverse Polish Notation is also called as Post fix 
+- 10 + 15 ( Infix Notation )
+- + 10 15 ( Prefix Notation )
+- 10 15 + ( Postfix Notation )
+- Infix math expression
+  ( 10 * 3 ) - (100 / 20 )
+                 -
+          *               /
+     10       3        100    20 
+- Binary Tree Traversal Algorithms
+  - Inorder Traversal
+  - Preorder Traversal
+  - Postorder Traversal algorithms
+</pre>
+
+## Info - Postorder Traversal ( Recursive Variant )
+<pre>
+- Process Left Child
+- Process Right Child
+- Process Parent
+- "10 3 * 100 20 / -"
+</pre>
+
+## Lab - Cloning TekTutor's Training Repository
+```
+cd ~
+git clone https://github.com/tektutor/ansible-nov-2025
+cd ansible-nov-2025
+ls
+```
+
+## Lab - Python based RPN Calculator
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day1/python
+python3 rpncalculator.py
+```
