@@ -20,5 +20,17 @@
   - binary types
     - bytes
     - bytearray
-  
+- it is used for developing
+  - console/command-line applications
+  - AI/ML 
+  - Web applications
+  - Games
+  - Academic
+  - pattern matching
+  - embedded projects
+- python is supported in following OS
+  - Unix
+  - Linux
+  - Mac
+  - Windows
 </pre>
