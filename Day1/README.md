@@ -1,7 +1,7 @@
 # Day 1
 
 
-# Python Overview
+## Python Overview
 <pre>
 - is a high level scripting programming language
 - dynamically typed language
