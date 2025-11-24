@@ -65,3 +65,4 @@ Run it
 ```
 python3 hello.py
 ```
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/98750362-f6e6-4a4a-ba11-c4664fe11608" />
