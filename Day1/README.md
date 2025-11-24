@@ -91,3 +91,4 @@ Run it
 ```
 python3 sumofintegers.py
 ```
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/afa3b022-95f3-4d1a-b0f2-4d10c716a00c" />
