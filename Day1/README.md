@@ -34,3 +34,8 @@
   - Mac
   - Windows
 </pre>
+
+## Lab - Checking your python environment
+```
+python3 --version
+```
