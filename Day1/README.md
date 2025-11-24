@@ -228,5 +228,7 @@ ls
 cd ~/ansible-nov-2025
 git pull
 cd Day1/python
+cat stack.py
+cat rpncalculator.py
 python3 rpncalculator.py
 ```
