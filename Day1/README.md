@@ -81,3 +81,13 @@ chmod +x ./hello.py
 ls
 ./hello.py
 ```
+
+## Lab - Find sum of int range accepting user inputs
+
+Write a simple python program as shown below
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/52ab8d6b-be8c-48d9-b89f-8b399af0b7e1" />
+
+Run it
+```
+python3 sumofintegers.py
+```
