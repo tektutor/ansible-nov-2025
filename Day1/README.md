@@ -182,3 +182,7 @@ python3 string.py
 
 Expected output
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/017382ac-ca96-4ba5-85e4-818d99046b84" />
+
+## Lab - Python Function
+
+## Lab - Python class ( user-defined data-type )
