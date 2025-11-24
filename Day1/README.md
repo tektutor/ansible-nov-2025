@@ -115,3 +115,33 @@ Run it
 python3 ./reverse-number.py
 ```
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/bdca62b2-b353-4562-bf2b-0da2d30cac51" />
+
+
+## Info - Python Operators and expressions
+
+Comparision Operators in Python
+<pre>
+==  equal
+!=  not equal
+>   greter than
+<   less than
+>=  greter than or equal to
+<=  less than or equal to
+</pre>
+
+Assignment Operators
+<pre>
+=  assign
++= add and assign
+-= subtract and assign
+*= multiply and assign
+/= divide and assign
+%= mod and assign
+</pre>
+
+Logical Operators
+<pre>
+and  True and True   results in True
+or   True or False   results in True
+not  Negate    e.g. not False is Tue
+</pre>
