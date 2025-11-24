@@ -39,3 +39,9 @@
 ```
 python3 --version
 ```
+
+Expected output
+<pre>
+python3 --version                  
+Python 3.13.3  
+</pre>
