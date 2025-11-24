@@ -145,3 +145,40 @@ and  True and True   results in True
 or   True or False   results in True
 not  Negate    e.g. not False is Tue
 </pre>
+
+## Lab - Getting used to python string
+Write a python script named string.py with below code
+```
+#!/usr/bin/python3
+
+firstString = "Some"
+secondString = "String"
+print(firstString)
+print(secondString)
+result = firstString + secondString
+print("Cancatenated string is ", result )
+print("---------------------------------------")
+s = "Advanced Python"
+print(s)
+length = len(s)
+print("Length of string ", s, " is ", length )
+
+#First letter in the string s
+print( s[0] ) # Print 'A'
+
+#Last letter in the string s
+print( s[length-1] )
+print( s[-1] )
+
+#convert to Upper case
+print(s.upper())
+print(s.lower())
+```
+
+Run it
+```
+python3 string.py
+```
+
+Expected output
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/017382ac-ca96-4ba5-85e4-818d99046b84" />
