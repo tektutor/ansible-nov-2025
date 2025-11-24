@@ -4,3 +4,8 @@
 <pre>
  https://survey.zohopublic.com/zs/6AEF72 
 </pre>
+
+## Pre-test link
+<pre>
+https://rpsconsulting116.examly.io/student 
+</pre>
