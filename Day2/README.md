@@ -35,6 +35,9 @@ Note
 ## Lab - Running and testing the REST API
 Open Terminal Tab 1, run the below command
 ```
+cd ~/ansible-nov-2025
+git pull
+cd Day2/python/REST-API
 uvicorn main:app --reload
 ```
 
