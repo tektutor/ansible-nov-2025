@@ -129,6 +129,11 @@ curl -X DELETE http://localhost:8000/employees/2 \
 ![ansible](AnsibleHighLevelArchitecture.png)
 
 ## Lab - Creating couple of ubuntu docker containers to use them as ansible nodes
+In case you already have ubuntu1 and ubuntu2
+```
+docker rm -f ubuntu1 ubuntu2
+```
+
 Create ubuntu1 and ubuntu2 containers
 ```
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
@@ -166,6 +171,14 @@ ansible-doc -l | wc
 ```
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/486df928-8c57-4106-a2dd-85d4f3450a51" />
 
+## Lab - Install SSH Server
+```
+sudo apt update && sudo apt install -y openssh-server
+sudo ufw enable
+sudo ufw allow OpenSSH
+sudo ufw status verbose
+```
+
 
 ## Lab - Running ansible ad-hoc command
 ```
@@ -181,3 +194,12 @@ ansible -i inventory all -m shell -a "hostname -i"
 ```
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/8d1e4edd-a3f9-4da1-af5f-fd3b65ee8e9d" />
 
+
+## Lab - Running your first ansible playbook
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day2/ansible
+ansible-playbook -i inventory ping-playbook.yml
+```
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/907d6f58-37a8-4bea-ada0-7d4d89784cd4" />
