@@ -194,3 +194,12 @@ ansible -i inventory all -m shell -a "hostname -i"
 ```
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/8d1e4edd-a3f9-4da1-af5f-fd3b65ee8e9d" />
 
+
+## Lab - Running your first ansible playbook
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day2/ansible
+ansible-playbook -i inventory ping-playbook.yml
+```
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/907d6f58-37a8-4bea-ada0-7d4d89784cd4" />
