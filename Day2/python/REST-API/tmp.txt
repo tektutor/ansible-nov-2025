@@ -1,0 +1,14 @@
+curl -X POST http://localhost:8000/employees \
+-H "Content-Type": "application/json" \
+-d '{"id": 100, "name": "Siddharth", "dept": "IT"}'
+
+curl -X PUT http://localhost:8000/employees \
+-H "Content-Type": "application/json" \
+-d '{"id": 100, "name": "Shankar", "dept": "IT"}'
+
+curl -X DELETE http://localhost:8000/employees/2 \
+-H "Content-Type": "application/json"
+
+
+
+
