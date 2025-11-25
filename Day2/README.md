@@ -159,4 +159,10 @@ ansible --version
 ```
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/cfe2440e-c7ef-4be1-83f2-7d0c3068e524" />
 
+## Lab - Listing ansible modules
+```
+ansible-doc -l
+ansible-doc -l | wc
+```
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/486df928-8c57-4106-a2dd-85d4f3450a51" />
 
