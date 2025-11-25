@@ -139,6 +139,8 @@ List the running containers
 ```
 docker ps
 ```
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/32f261ba-acae-4c2c-9319-3c2ab135f3ba" />
+
 
 Test if you are able to SSH into the containers without password
 ```
@@ -148,6 +150,8 @@ exit
 ssh -p 2002 root@localhost
 exit
 ```
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/5b4ef5c9-ee24-4047-b3a2-2b9e902e7ace" />
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/a634392b-d3b4-4bd8-b8f1-f9da81428aa5" />
 
 ## Lab - Check ansible version
 ```
