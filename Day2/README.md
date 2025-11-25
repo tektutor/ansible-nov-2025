@@ -30,3 +30,34 @@ Note
   - PATCH - used while updating partial update
   - DELETE - deleting a record
 </pre>
+
+
+## Lab - Running and testing the REST API
+Open Terminal Tab 1, run the below command
+```
+uvicorn main:app --reload
+```
+
+Open Terminal Tab, run the below command
+```
+# To try retrieving existing records
+curl -X GET http://localhost:8000/employees
+curl -X GET http://localhost:8000/employees/1
+curl -X GET http://localhost:8000/employees/2
+
+# To add new record
+curl -X POST http://localhost:8000/employees \
+-H "Content-Type": "application/json" \
+-d '{"id": 100, "name": "Siddharth", "dept": "IT"}'
+
+# To try updating existing record
+curl -X PUT http://localhost:8000/employees \
+-H "Content-Type": "application/json" \
+-d '{"id": 100, "name": "Shankar", "dept": "IT"}'
+
+# To delete existing record
+curl -X DELETE http://localhost:8000/employees/2 \
+-H "Content-Type": "application/json"
+
+
+```
