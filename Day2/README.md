@@ -171,6 +171,14 @@ ansible-doc -l | wc
 ```
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/486df928-8c57-4106-a2dd-85d4f3450a51" />
 
+## Lab - Install SSH Server
+```
+sudo apt update && sudo apt install -y openssh-server
+sudo ufw enable
+sudo ufw allow OpenSSH
+sudo ufw status verbose
+```
+
 
 ## Lab - Running ansible ad-hoc command
 ```
