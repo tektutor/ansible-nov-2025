@@ -203,3 +203,4 @@ cd Day2/ansible
 ansible-playbook -i inventory ping-playbook.yml
 ```
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/907d6f58-37a8-4bea-ada0-7d4d89784cd4" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cc3106b4-b223-4eb2-85db-c3b30ba38fee" />
