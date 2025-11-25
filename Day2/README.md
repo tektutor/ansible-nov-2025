@@ -129,6 +129,11 @@ curl -X DELETE http://localhost:8000/employees/2 \
 ![ansible](AnsibleHighLevelArchitecture.png)
 
 ## Lab - Creating couple of ubuntu docker containers to use them as ansible nodes
+In case you already have ubuntu1 and ubuntu2
+```
+docker rm -f ubuntu1 ubuntu2
+```
+
 Create ubuntu1 and ubuntu2 containers
 ```
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
