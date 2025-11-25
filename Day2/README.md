@@ -173,5 +173,8 @@ cd ~/ansible-nov-2025
 git pull
 cd Day2/ansible
 ansible -i inventory all -m ping
+ansible -i inventory all -m setup
+ansible -i inventory all -m shell -a "hostname"
+ansible -i inventory all -m shell -a "hostname -i"
 ```
 
