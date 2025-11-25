@@ -61,6 +61,26 @@ curl -X PUT http://localhost:8000/employees \
 # To delete existing record
 curl -X DELETE http://localhost:8000/employees/2 \
 -H "Content-Type": "application/json"
-
-
 ```
+
+## Info - Provisioning Tool
+<pre>
+- using provisioning tools one can automate the infrastructure
+- i.e create a virtual machine on the local data center, or public cloud (AWS, Azure, GCP )
+- examples
+  - AWS Cloudformation
+  - Terraform
+</pre>
+	
+## Info - Configuration Management Tool
+<pre>
+- Configuration Management Tools helps us in automating system administrative tasks
+- configuration is done on a machine with pre-installed OS
+- on a machine where OS is already installed, you can use configuration management tools to further install softwares, configure the software, perform user management, etc.,
+- examples
+  - Puppet
+  - Chef
+  - Salt/Saltstack ( This is almost dead )
+  - Ansible
+</pre>
+
