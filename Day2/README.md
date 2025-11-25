@@ -166,3 +166,12 @@ ansible-doc -l | wc
 ```
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/486df928-8c57-4106-a2dd-85d4f3450a51" />
 
+
+## Lab - Running ansible ad-hoc command
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day2/ansible
+ansible -i inventory all -m ping
+```
+
