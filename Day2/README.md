@@ -124,3 +124,6 @@ curl -X DELETE http://localhost:8000/employees/2 \
 - it is developed on top of opensource AWX
 - Red Hat also provides world-wide support for Ansible Automation Platform 
 </pre>
+
+## Info - Ansible High-Level Architecture
+![ansible](AnsibleHighLevelArchitecture.png)
