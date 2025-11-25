@@ -179,4 +179,5 @@ ansible -i inventory ubuntu2 -m setup
 ansible -i inventory all -m shell -a "hostname"
 ansible -i inventory all -m shell -a "hostname -i"
 ```
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/8d1e4edd-a3f9-4da1-af5f-fd3b65ee8e9d" />
 
