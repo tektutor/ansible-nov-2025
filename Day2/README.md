@@ -84,3 +84,43 @@ curl -X DELETE http://localhost:8000/employees/2 \
   - Ansible
 </pre>
 
+## Info - Ansible Overview
+<pre>
+- is developed in Python by Michael Deehan
+- Michael was former employee(architect) of Red Hat
+- He left Red Hat and he started a company called Ansible Inc
+- He developed Ansible Core as an open source project
+- comes in 3 flavours
+  1. Ansible Core 
+  2. AWX
+  3. Ansible Automation Platform ( earlier was called Ansible Tower )
+</pre>
+
+## Info - Ansible Core
+<pre>
+- an opensource project
+- supports command-line only
+- can manage Windows, Unix, Linux and Mac Ansible Nodes
+- the machine where the automation is done is called Ansible Node
+- the machine where Ansible is installed is called Ansible Controller Machine(ACM)
+- Ansible can be installed on Linux machines ( unofficially works in Mac OS-X )
+- Ansible can't be natively installed on Windows
+- ACM machine can't be a Windows machine, however ansible can manage a Windows server
+</pre>
+
+## Info - AWX
+<pre>
+- is an opensource project
+- developed on top of Ansible Core
+- supports Web console ( Web GUI )
+- supports user management
+- can be accessed from Web browser
+</pre>
+
+## Info - Ansible Automation Platform ( or Ansible Tower )
+<pre>
+- This is an enterprise product from Red Hat
+- license is required to use it
+- it is developed on top of opensource AWX
+- Red Hat also provides world-wide support for Ansible Automation Platform 
+</pre>
