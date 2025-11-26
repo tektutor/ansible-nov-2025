@@ -33,6 +33,7 @@
   - package manager knows the url from where the softwares can be downloaded and installed
   - package manager knows which Linux family, which OS version and bitness(32/64) you are using
   - package manager the compatible installer binary and installs that for you on your OS when requested
+  - for third-party softwares, we need to update(add) the repository url before installing
 - There are many Linux Families
   - For example
     - Red Hat Linux Family
@@ -61,11 +62,17 @@
 </pre>
 
 ## Lab - Install nginx web server onto Ubuntu1 and Ubuntu2 Ansible node containers using Ansible Playbook
+In case you already have created rocky1 and rocky2 containers with wrong port forwarding, you may delete it with below command
+```
+docker rm -f rocky1 rocky2
+```
+
 Create rocky ansible node containers
 ```
-docker run -d --name rocky1 --hostname rocky1 -p 2003:20 -p 8003:80 tektutor/rocky-ansible-node:latest
-docker run -d --name rocky2 --hostname rocky2 -p 2004:20 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/rocky-ansible-node:latest
 docker ps
+
 ssh -p 2003 root@localhost
 exit
 
