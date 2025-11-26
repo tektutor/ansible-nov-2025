@@ -99,3 +99,12 @@ curl http://localhost:8004
 <img width="1920" height="1168" alt="image" src="https://github.com/user-attachments/assets/854f9644-8bcf-494a-968c-563529b44be7" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1ce9e571-4860-49ba-baab-cd47cff9cc39" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/2d193f0a-45b2-43e4-8ac7-10f873a3758d" />
+
+
+## Lab - Running the refactored install nginx playbook that follows best practices
+```
+cd ~/anisble-nov-2025
+git pull
+cd Day3/ansible/refactored-playbook
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
