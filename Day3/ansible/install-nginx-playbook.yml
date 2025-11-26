@@ -1,20 +1,48 @@
 - name: This playbook will install nginx web server, configures it to use custom web root folder and deploys custom web page
   hosts: all
   tasks:
-  - name: Install nginx web server in ansible nodes
+  - name: Install nginx web server in ansible Ubuntu nodes
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     apt: name=nginx state=latest update_cache=yes
 
-  - name: Start nginx web server
+  - name: Install nginx web server in ansible Rocky nodes
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    dnf: name=nginx state=latest update_cache=yes
+
+  - name: Start nginx web server in ansible Ubuntu nodes 
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     service: name=nginx state=started
+
+  - name: Check if nginx web server is already running
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    shell: curl localhost
+    register: output
+    ignore_errors: yes
+
+  - debug: var=output
+
+  - name: Start nginx web server in ansible Rocky nodes 
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" and output.rc != 0)
+    shell: nginx
 
   - name: Create custom web root folder
     file: path=/var/html mode=0755 state=directory 
 
-  - name: Configure nginx server to use our custom web root folder
+  - name: Configure nginx server on Ubuntu nodes to use our custom web root folder
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     copy: src=default dest=/etc/nginx/sites-available/default
 
-  - name: Restart nginx web server to apply config chantes
+  - name: Configure nginx server on Rocky nodes to use our custom web root folder
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+
+  - name: Restart nginx web server to apply config changes in Ubuntu nodes
+    when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
     service: name=nginx state=restarted
+
+  - name: Restart nginx web server in ansible Rocky nodes 
+    when: ( ansible_distribution == "Rocky" and ansible_os_family == "RedHat" )
+    shell: nginx -s stop && nginx 
 
   - name: Deploy custom web page
     copy: src=index.html dest=/var/html/index.html 
