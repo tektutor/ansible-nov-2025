@@ -1,20 +1,9 @@
 - name: This playbook will install nginx web server, configures it to use custom web root folder and deploys custom web page
   hosts: all
   tasks:
-  - name: Install nginx web server in ansible nodes
-    apt: name=nginx state=latest update_cache=yes
+  - include_tasks: "install-nginx-{{ansible_distribution|lower}}.yml"
+  - include_tasks: "start-nginx-{{ansible_distribution|lower}}.yml"
+  - include_tasks: common-nginx-tasks.yml
+  - include_tasks: "configure-nginx-{{ansible_distribution|lower}}.yml"
+  - include_tasks: "restart-nginx-{{ansible_distribution|lower}}.yml"
 
-  - name: Start nginx web server
-    service: name=nginx state=started
-
-  - name: Create custom web root folder
-    file: path=/var/html mode=0755 state=directory 
-
-  - name: Configure nginx server to use our custom web root folder
-    copy: src=default dest=/etc/nginx/sites-available/default
-
-  - name: Restart nginx web server to apply config chantes
-    service: name=nginx state=restarted
-
-  - name: Deploy custom web page
-    copy: src=index.html dest=/var/html/index.html 

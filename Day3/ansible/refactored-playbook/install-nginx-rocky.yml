@@ -1,0 +1,2 @@
+- name: Install nginx web server in ansible Rocky nodes
+  dnf: name=nginx state=latest update_cache=yes
