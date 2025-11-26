@@ -33,6 +33,7 @@
   - package manager knows the url from where the softwares can be downloaded and installed
   - package manager knows which Linux family, which OS version and bitness(32/64) you are using
   - package manager the compatible installer binary and installs that for you on your OS when requested
+  - for third-party softwares, we need to update(add) the repository url before installing
 - There are many Linux Families
   - For example
     - Red Hat Linux Family
