@@ -62,6 +62,11 @@
 </pre>
 
 ## Lab - Install nginx web server onto Ubuntu1 and Ubuntu2 Ansible node containers using Ansible Playbook
+In case you already have created rocky1 and rocky2 containers with wrong port forwarding, you may delete it with below command
+```
+docker rm -f rocky1 rocky2
+```
+
 Create rocky ansible node containers
 ```
 docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:latest
