@@ -64,8 +64,8 @@
 ## Lab - Install nginx web server onto Ubuntu1 and Ubuntu2 Ansible node containers using Ansible Playbook
 Create rocky ansible node containers
 ```
-docker run -d --name rocky1 --hostname rocky1 -p 2003:20 -p 8003:80 tektutor/rocky-ansible-node:latest
-docker run -d --name rocky2 --hostname rocky2 -p 2004:20 -p 8004:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/rocky-ansible-node:latest
 docker ps
 
 ssh -p 2003 root@localhost
