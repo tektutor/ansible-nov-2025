@@ -1,5 +1,31 @@
 # Day 3
 
+## Info - What is the motivation to use Ansible? Why can't we use Powershell or Python or Batch files etc to automate?
+<pre>
+- Programming languages are broadly classified into 2 types
+  1. Imperative Programming Language
+     - We need to write code to instruct what we wanted to automate
+     - We also need to write code to instruct how to perform the automation
+     - examples
+       - C/C++/Python/C#, Powershell, Shell scripts are all imperative languages
+  2. Declarative Programming Language
+     - We just need to tell what we wanted to automate, the tool will take care of how to do it
+     - examples
+       - Ansible
+       - Puppet
+       - Chef
+- Hence, Ansible or any Configuration Management Tool must be used to automate the Configuration Management in the
+  place of Shell scripts or Powershell.
+- As Ansible,Puppet, Chef are Idempotent
+- the meaning of Idempotent is
+  - For instance
+    - when we run an ansible playbook to install latest version of nginx first time
+    - ansible will check the ubuntu1 and ubuntu1 nodes, if it finds nginx is not installed already, it will install latest version of nginx and report in yellow color i.e Success with change
+    - next time when you run the same playbook on ubuntu1 and ubuntu2, this time ubuntu1 and ubuntu2 will already have latest version
+      of nginx, as Ansible is smart enough(idempotent) it will not attempt to reinstall, instead it reports the automation was a success and report in green color ( sucess with no change as your server was already in the desired state )
+    
+</pre>  
+
 ## Info - Linux Package Manager
 <pre>
 - Package Manager is a tool that is used in Linux to install/uninstall, update softwares
