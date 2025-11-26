@@ -107,4 +107,11 @@ cd ~/anisble-nov-2025
 git pull
 cd Day3/ansible/refactored-playbook
 ansible-playbook -i inventory install-nginx-playbook.yml
+curl http://localhost:8001
+curl http://localhost:8002
+curl http://localhost:8003
+curl http://localhost:8004
 ```
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/357c2fb9-f4e0-4fc3-bd5c-ea6246724641" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/43951ab3-bf9a-4e61-b9d3-1dd7de7ac0ca" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/7d795551-c956-4edc-b5cd-a77f05efdef7" />
