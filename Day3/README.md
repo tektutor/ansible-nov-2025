@@ -39,6 +39,7 @@
 cd ~/ansible-nov-2025
 git pull
 cd Day3/ansible
+cat install-nginx-playbook.yml
 ansible-playbook -i inventory install-nginx-playbook.yml
 ```
 
