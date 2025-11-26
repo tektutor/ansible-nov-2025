@@ -33,3 +33,13 @@
   - assume your Windows OS is 32-bit OS, 64-bit installer exe will not work on Windows 32-bit OS
 
 </pre>
+
+## Lab - Install nginx web server onto Ubuntu1 and Ubuntu2 Ansible node containers using Ansible Playbook
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+<img width="1920" height="1168" alt="image" src="https://github.com/user-attachments/assets/abdc83e7-5a2b-4199-90b2-916c333cb996" />
