@@ -139,6 +139,8 @@ Create ubuntu1 and ubuntu2 containers
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
 docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest 
 ```
+<img width="3136" height="1608" alt="image" src="https://github.com/user-attachments/assets/dfc09fcb-a959-4755-8446-83de04193fe0" />
+
 
 List the running containers
 ```
@@ -203,3 +205,4 @@ cd Day2/ansible
 ansible-playbook -i inventory ping-playbook.yml
 ```
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/907d6f58-37a8-4bea-ada0-7d4d89784cd4" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cc3106b4-b223-4eb2-85db-c3b30ba38fee" />
