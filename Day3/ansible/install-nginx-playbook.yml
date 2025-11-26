@@ -3,3 +3,7 @@
   tasks:
   - name: Install nginx web server in ansible nodes
     apt: name=nginx state=latest update_cache=yes
+
+  - name: Start nginx web server
+    service: name=nginx state=started
+
