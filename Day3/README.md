@@ -61,6 +61,18 @@
 </pre>
 
 ## Lab - Install nginx web server onto Ubuntu1 and Ubuntu2 Ansible node containers using Ansible Playbook
+Create rocky ansible node containers
+```
+docker run -d --name rocky1 --hostname rocky1 -p 2003:20 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky2 --hostname rocky2 -p 2004:20 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker ps
+ssh -p 2003 root@localhost
+exit
+
+ssh -p 2004 root@localhost
+exit
+```
+
 ```
 cd ~/ansible-nov-2025
 git pull
@@ -69,6 +81,8 @@ cat install-nginx-playbook.yml
 ansible-playbook -i inventory install-nginx-playbook.yml
 curl http://localhost:8001
 curl http://localhost:8002
+curl http://localhost:8003
+curl http://localhost:8004
 ```
 
 <img width="1920" height="1168" alt="image" src="https://github.com/user-attachments/assets/abdc83e7-5a2b-4199-90b2-916c333cb996" />
