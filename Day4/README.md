@@ -185,3 +185,4 @@ kubectl get pods -l "app.kubernetes.io/managed-by=awx-operator" -w
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/fc748f0a-3e06-458b-85d7-0a605d509b4e" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/502c3394-c6ea-4076-8894-8d44e5e6c6ae" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c4cd3b8d-e372-4350-80d6-6f800a4ec5bb" />
