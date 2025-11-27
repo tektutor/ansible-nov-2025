@@ -185,3 +185,22 @@ kubectl get pods -l "app.kubernetes.io/managed-by=awx-operator" -w
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/fc748f0a-3e06-458b-85d7-0a605d509b4e" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/502c3394-c6ea-4076-8894-8d44e5e6c6ae" />
+
+Create a file named awx-demo.yml with below content
+```
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx-demo
+spec:
+  service_type: nodeport
+```
+
+Run the below command
+```
+kubectl apply -f awx-demo.yml
+kubectl get svc -l "app.kubernetes.io/managed-by=awx-operator"
+kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+```
