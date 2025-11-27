@@ -37,10 +37,17 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 
 ## Info - Dynamic Inventory
 <pre>
-- dynamic inventory is typically a custom python script that retrieves the ansible node connection details at run time
-- ansible expects the dynamic inventory in the form of JSON string, as long as our python script provides the ansible node details in that forward it will work as expected
-- the benefit of using dynamic inventory over static inventory is that, when ansible nodes are taken down for system maintainence we don't need to update the inventory each time like we do in static inventory
-- also when new nodes are added, we don't need to add them manually in the inventory as dynamic inventory script will find which all nodes are accessible at the time we run the dynamic_inventory.py script
+- dynamic inventory is typically a custom python script that retrieves 
+  the ansible node connection details at run time
+- ansible expects the dynamic inventory in the form of JSON string, as long 
+  as our python script provides the ansible node details in that forward 
+  it will work as expected
+- the benefit of using dynamic inventory over static inventory is that, 
+  when ansible nodes are taken down for system maintainence we don't need 
+  to update the inventory each time like we do in static inventory
+- also when new nodes are added, we don't need to add them manually in the 
+  inventory as dynamic inventory script will find which all nodes are accessible 
+  at the time we run the dynamic_inventory.py script
 </pre>
 
 ## Lab - Using dynamic inventory
