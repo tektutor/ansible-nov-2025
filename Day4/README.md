@@ -68,6 +68,24 @@ ansible-playbook install-nginx-playbook.yml
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1336e4bb-f0ce-49a2-aab1-763d74396c4b" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/f4300e0b-0030-4824-ace8-aac83dd342ca" />
 
+## Lab - Ansible Loops
+In this example the curl ports we are computing with the with_sequence loop.
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day4/ansible/ansible-role
+ansible-playbook install-nginx-playbook.yml
+````
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/589f5e4d-77d1-48f2-af75-6ca3d53fda47" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c154183d-0d8e-4e11-af2c-cacf2add6bb5" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/bba37e51-08fd-4183-9b56-bf5d4421de3d" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/9b437026-b0fc-41bc-8ddd-623a180e6f94" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/899ed6a8-43e1-4002-9080-9b9277ea9d0a" />
+
+
+
+
 
 
 
