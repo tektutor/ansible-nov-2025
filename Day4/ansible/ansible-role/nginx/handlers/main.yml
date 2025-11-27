@@ -1,0 +1,7 @@
+---
+# handlers file for nginx
+- name: Restart nginx web server in ansible Rocky nodes 
+  shell: nginx -s stop && nginx 
+
+- name: Restart nginx web server to apply config changes in Ubuntu nodes
+  service: name=nginx state=restarted
