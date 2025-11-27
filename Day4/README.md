@@ -130,7 +130,7 @@ ansible-vaule encrypt my-credentials.yml
 
 Install tree utility
 ```
-sudo dnf install -y tree
+sudo dnf install -y tree, the admin password is rps@12345
 ```
 
 ```
