@@ -47,7 +47,20 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 ```
 cd ~/ansible-nov-2025
 git pull
-cd Day4/ansible/ansible-role
+cd Day4/ansible/ansible-node
+cat ansible.cfg
 ./dynamic_inventory.py
+ansible all -m ping
 ansible-playbook install-nginx-playbook.yml
 ```
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ca135309-9860-47ee-b9cc-d94d54ffc367" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/608af2ab-d273-4236-af8b-f3fb486b6a13" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/0fd2231c-1ed3-41f6-976f-a1b8c665ae94" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/963e1b8c-e0d6-467a-b33a-96542bcd98fb" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1336e4bb-f0ce-49a2-aab1-763d74396c4b" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/f4300e0b-0030-4824-ace8-aac83dd342ca" />
+
+
+
+
