@@ -84,7 +84,14 @@ ansible-playbook install-nginx-playbook.yml
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/899ed6a8-43e1-4002-9080-9b9277ea9d0a" />
 
 
-
+## Info - Ansible Tools Overview
+<pre>
+ansible - used to run ansible ad-hoc commands
+ansible-playbook - used to run the ansible playbooks
+ansible-doc - give help - usage details
+ansible-galaxy - helps in download/install/create ansible roles
+ansibe-vault - helps in security login credentials, certs, etc by encrypting
+</pre>
 
 
 
