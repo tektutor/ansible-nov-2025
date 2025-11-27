@@ -153,6 +153,9 @@ In case, minikube is not installed already
 ```
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+curl -LO https://dl.k8s.io/release/v1.34.0/bin/linux/amd64/kubectl
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin
 ```
 
 Minikube is already installed in our lab machine, hence you may skip the above steps
@@ -165,6 +168,9 @@ minikube start
 
 kubectl get nodes
 ```
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/9bf3a126-4b34-432c-a574-1b5d8d3a5dd1" />
+
 
 ```
 git clone https://github.com/ansible/awx-operator.git
