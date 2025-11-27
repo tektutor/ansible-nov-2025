@@ -54,7 +54,7 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 ```
 cd ~/ansible-nov-2025
 git pull
-cd Day4/ansible/ansible-node
+cd Day4/ansible/ansible-role
 cat ansible.cfg
 ./dynamic_inventory.py
 ansible all -m ping
@@ -84,8 +84,34 @@ ansible-playbook install-nginx-playbook.yml
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/899ed6a8-43e1-4002-9080-9b9277ea9d0a" />
 
 
+## Info - Ansible Tools Overview
+<pre>
+ansible - used to run ansible ad-hoc commands
+ansible-playbook - used to run the ansible playbooks
+ansible-doc - give help - usage details
+ansible-galaxy - helps in download/install/create ansible roles
+ansibe-vault - helps in security login credentials, certs, etc by encrypting
+</pre>
 
 
+## Lab - Ansible vault
+Note
+<pre>
+- Ansible vault helps us in securely saving and retrieve login credentials, certs etc by encrypting them
+- Using vault password we can decrypt and use them in playbooks on need basis
+</pre>
 
+Let's do this lab exercise and understand ansible vault practically. When prompts for password type root as password
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day4/vault
+cat mysql-login-credentials.yml
+ansible-vault view mysql-login-credentials.yml
+ansible-vault edit mysql-login-credentials.yml
 
+ansible-playbook vault-playbook.yml --ask-vault-pass
+```
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/53a876fb-929e-4953-a7e8-b2669a0c6a75" />
 
