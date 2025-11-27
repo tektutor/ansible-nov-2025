@@ -54,7 +54,7 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 ```
 cd ~/ansible-nov-2025
 git pull
-cd Day4/ansible/ansible-node
+cd Day4/ansible/ansible-role
 cat ansible.cfg
 ./dynamic_inventory.py
 ansible all -m ping
