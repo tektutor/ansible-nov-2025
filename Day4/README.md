@@ -15,3 +15,7 @@ git pull
 cd Day4/ansible
 
 ```
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/500c34a8-b427-4798-a814-53d741310856" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b6906ac7-9447-4981-a25f-fb43f44b3f04" />
+
