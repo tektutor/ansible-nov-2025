@@ -2,3 +2,14 @@
   hosts: all
   roles:
   - nginx
+
+- name: Verify if nginx web pages are accessible
+  hosts: localhost
+  tasks:
+  - name: Access the web page hosted by nginx web server
+    shell: "curl http://localhost:8{{item}}"
+    with_sequence: start=1 end=4 format="%03d"
+    register: output
+
+  - debug: var=output
+
