@@ -147,3 +147,31 @@ ansible-playbook playbook.yml
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/5f870881-4e91-49f5-bc58-bb1fb9a75219" />
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/e54a8730-cefb-4048-9032-b7b2ad27a1f3" />
+
+## Lab - Installing Ansible Tower
+In case, minikube is not installed already
+```
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+```
+
+Minikube is already installed in our lab machine, hence you may skip the above steps
+```
+minikube status
+minikube config set cpus 4
+minikube config set memory 16384
+minikube config set disk-size 100
+minikube start
+
+kubectl get nodes
+```
+
+```
+git clone https://github.com/ansible/awx-operator.git
+cd awx-operator
+git checkout tags/2.19.0
+make deploy
+kubectl config set-context --current --namespace=awx
+kubectl get pods
+kubectl get pods -l "app.kubernetes.io/managed-by=awx-operator" -w
+```
