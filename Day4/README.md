@@ -125,3 +125,19 @@ ansible-vault decrypt my-credentials.yml
 cat my-credentials.yml
 ansible-vaule encrypt my-credentials.yml
 ```
+
+## Lab - Developing a custom ansible module and using it in an ansible playbook
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day4/ansible/custom-ansible-module
+tree
+cat library/hello.py
+cat playbook.yml
+ansible-playbook playbook.yml
+```
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/253585d1-7d40-462a-911e-6eb5561396ed" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/5f870881-4e91-49f5-bc58-bb1fb9a75219" />
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/e54a8730-cefb-4048-9032-b7b2ad27a1f3" />
