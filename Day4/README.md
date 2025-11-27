@@ -8,7 +8,7 @@
 - ansible roles can be invoked from ansible playbooks
 </pre>
 
-## Lab - Creating a custom ansible role and using it in our Ansible playbook
+## Lab - Creating a custom ansible role and using it in our Ansible playbook ( complete this lab exercise and notify me )
 ```
 cd ~/ansible-nov-2025
 git pull
