@@ -115,3 +115,13 @@ ansible-playbook vault-playbook.yml --ask-vault-pass
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/53a876fb-929e-4953-a7e8-b2669a0c6a75" />
 
+You can also try the below commands
+```
+ansible-vault create my-credentials.yml
+ansible-vault view my-credentials.yml
+ansible-vault edit my-credentials.yml
+cat my-credentials.yml
+ansible-vault decrypt my-credentials.yml
+cat my-credentials.yml
+ansible-vaule encrypt my-credentials.yml
+```
