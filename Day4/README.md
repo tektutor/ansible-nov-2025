@@ -34,3 +34,58 @@ ansible-playbook -i inventory install-nginx-playbook.yml
   - next it check in the user home directory for a file named .ansible.cfg, if it finds it uses that file otherwise
   - next it looks for ansible.cfg at /etc/ansible folder
 </pre>
+
+## Info - Dynamic Inventory
+<pre>
+- dynamic inventory is typically a custom python script that retrieves 
+  the ansible node connection details at run time
+- ansible expects the dynamic inventory in the form of JSON string, as long 
+  as our python script provides the ansible node details in that forward 
+  it will work as expected
+- the benefit of using dynamic inventory over static inventory is that, 
+  when ansible nodes are taken down for system maintainence we don't need 
+  to update the inventory each time like we do in static inventory
+- also when new nodes are added, we don't need to add them manually in the 
+  inventory as dynamic inventory script will find which all nodes are accessible 
+  at the time we run the dynamic_inventory.py script
+</pre>
+
+## Lab - Using dynamic inventory
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day4/ansible/ansible-node
+cat ansible.cfg
+./dynamic_inventory.py
+ansible all -m ping
+ansible-playbook install-nginx-playbook.yml
+```
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ca135309-9860-47ee-b9cc-d94d54ffc367" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/608af2ab-d273-4236-af8b-f3fb486b6a13" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/0fd2231c-1ed3-41f6-976f-a1b8c665ae94" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/963e1b8c-e0d6-467a-b33a-96542bcd98fb" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1336e4bb-f0ce-49a2-aab1-763d74396c4b" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/f4300e0b-0030-4824-ace8-aac83dd342ca" />
+
+## Lab - Ansible Loops
+In this example the curl ports we are computing with the with_sequence loop.
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day4/ansible/ansible-role
+ansible-playbook install-nginx-playbook.yml
+````
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/589f5e4d-77d1-48f2-af75-6ca3d53fda47" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c154183d-0d8e-4e11-af2c-cacf2add6bb5" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/bba37e51-08fd-4183-9b56-bf5d4421de3d" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/9b437026-b0fc-41bc-8ddd-623a180e6f94" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/899ed6a8-43e1-4002-9080-9b9277ea9d0a" />
+
+
+
+
+
+
+
