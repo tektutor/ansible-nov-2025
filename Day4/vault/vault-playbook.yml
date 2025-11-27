@@ -1,0 +1,7 @@
+- name: This playbook demonstrates retrieving and using the login credentials safely usingansible vault
+  hosts: localhost 
+  vars_files:
+  - mysql-login-credentials.yml
+
+  tasks:
+  - debug: msg="Username - {{username}} and password - {{password}}"
