@@ -42,3 +42,12 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 - the benefit of using dynamic inventory over static inventory is that, when ansible nodes are taken down for system maintainence we don't need to update the inventory each time like we do in static inventory
 - also when new nodes are added, we don't need to add them manually in the inventory as dynamic inventory script will find which all nodes are accessible at the time we run the dynamic_inventory.py script
 </pre>
+
+## Lab - Using dynamic inventory
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day4/ansible/ansible-role
+./dynamic_inventory.py
+ansible-playbook install-nginx-playbook.yml
+```
