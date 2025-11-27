@@ -127,6 +127,12 @@ ansible-vaule encrypt my-credentials.yml
 ```
 
 ## Lab - Developing a custom ansible module and using it in an ansible playbook
+
+Install tree utility
+```
+sudo dnf install -y tree
+```
+
 ```
 cd ~/ansible-nov-2025
 git pull
