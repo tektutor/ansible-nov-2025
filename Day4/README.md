@@ -206,6 +206,11 @@ kubectl get svc -n awx
 kubectl get pods -n awx -w
 kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager -n awx
 kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode ; echo
+minikube ip
+kubectl get svc/awx-demo-service -n awx
+
+#Your Ansible Tower url is
+http://192.168.49.2:<port-in-30000-series-on-awx-demo-service>
 ```
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/12bedbd0-1377-4d0f-bc05-fc2706e6a92e" />
