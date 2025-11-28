@@ -217,3 +217,31 @@ http://192.168.49.2:<port-in-30000-series-on-awx-demo-service>
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c7bcc631-3c7b-4745-9759-29258764f666" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/6b97c422-fefd-41c1-8dc8-87f8f1212d52" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/fc2b8642-b676-4075-bc44-c05d0b529e02" />
+
+#### Troubleshooting minikube Answer Tower Setup
+```
+minikube delete
+minikube config set cpus 4
+minikube config set memory 16384
+minikube config set disk-size 10
+docker system prune
+minikube start
+
+cd ~/awx-operator
+git checkout tags/2.19.0
+make deploy
+kubectl config set-context --current --namespace=awx
+kubectl get pods
+
+kubectl apply -f awx-demo.yml
+kubectl get svc -n awx
+#This is about the command below, you need to wait until all pods are running before proceeding to next command
+kubectl get pods -n awx -w
+kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager -n awx
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode ; echo
+minikube ip
+kubectl get svc/awx-demo-service -n awx
+
+#Your Ansible Tower url is
+http://192.168.49.2:<port-in-30000-series-on-awx-demo-service>
+```
