@@ -83,4 +83,6 @@ Click Launch button to run the Ansible Playbook
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/00bf14d4-62d2-477a-b1c7-41ea14774e43" />
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/949715d0-e9ea-46c7-b325-30a95afc22d9" />
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/374d90a2-0233-4e37-8e6e-0b5f11662907" />
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/e62af26d-0dd3-4650-8b6c-866b40ca6911" />
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/e4a6cc80-e59b-4ff5-9a53-facdab15bb21" />
 
