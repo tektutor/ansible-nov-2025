@@ -256,7 +256,7 @@ kubectl get svc/awx-demo-service -n awx
 http://192.168.49.2:<port-in-30000-series-on-awx-demo-service>
 ```
 
-## Demon - Ansible Tower CLI
+## Demo - Ansible Tower CLI
 
 To install tower-cli in Ubuntu
 ```
@@ -275,3 +275,22 @@ tower-cli tower-cli job launch -J "Invoke Install nginx playbook"
 ```
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/ddf8c9b5-7f7a-40a0-91e2-31ac028816d9" />
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/95892458-8e05-46b4-b3ba-44ce6979266a" />
+
+## Lab - Ansible Recommended Directory Structure
+```
+cd ~/ansible-nov-2025
+git pull
+cd Day5/ansible-dir-structure
+tree
+cat ansible.cfg
+cat hosts
+cat host_vars/ubuntu1
+cat host_vars/ubuntu2
+cat host_vars/rocky1
+cat host_vars/rocky2
+cat group_vars/all
+
+ansible all -m ping
+```
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/f502c39b-5d4d-4201-a0cd-12640b22b288" />
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/eab75c2a-51da-49c2-b3c4-3e6c818a4011" />
