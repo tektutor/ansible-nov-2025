@@ -209,3 +209,6 @@ kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n awx
 ```
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/12bedbd0-1377-4d0f-bc05-fc2706e6a92e" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c7bcc631-3c7b-4745-9759-29258764f666" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/6b97c422-fefd-41c1-8dc8-87f8f1212d52" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/fc2b8642-b676-4075-bc44-c05d0b529e02" />
