@@ -294,3 +294,33 @@ ansible all -m ping
 ```
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/f502c39b-5d4d-4201-a0cd-12640b22b288" />
 <img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/eab75c2a-51da-49c2-b3c4-3e6c818a4011" />
+
+## Info - Ansible Performance Optimization Guide
+<pre>
+- You can configure your ansible.cfg file, the below configuration will reuse the same SSH connection 
+[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersists=60s
+- You can Increase parallel execution in ansible.cfg, default vaule is 5 i.e ansible will connect to 5 servers at a time
+  [defaults]
+  forks = 50
+- Prevent rediscovery of facts during every ansible playbook execution
+  [defaults]
+  gathering = smart
+  fast_caching = jsonfile
+  fact_caching_connection = /tmp/ansible_fact_cache
+- Use aync poll - allows longs tasks to run while continuing other tasks
+  - name: Long task
+    command: dnf update -y
+    async: 300
+    poll: 0
+- Enable Pipelining
+  [ssh_connection]
+  pipelining = True
+- Disable Host Key checking for speed
+  [defaults]
+  host_key_checking = False
+- Enable profile
+  [defaults]
+  callback_whitelist = profile_tasks
+</pre>
+
