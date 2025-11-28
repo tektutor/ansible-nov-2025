@@ -149,6 +149,16 @@ ansible-playbook playbook.yml
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/e54a8730-cefb-4048-9032-b7b2ad27a1f3" />
 
 ## Lab - Installing Ansible Tower
+
+Installing Google chrome web browser
+```
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+sudo apt update
+sudo apt install google-chrome-stable
+google-chrome
+```
+
 In case, minikube is not installed already
 ```
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
