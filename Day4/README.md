@@ -255,3 +255,23 @@ kubectl get svc/awx-demo-service -n awx
 #Your Ansible Tower url is
 http://192.168.49.2:<port-in-30000-series-on-awx-demo-service>
 ```
+
+## Demon - Ansible Tower CLI
+
+To install tower-cli in Ubuntu
+```
+sudo apt update && sudo apt install -y python3 python3-pip
+pip install ansible-tower-cli --break-system-packages --upgrade
+
+tower-cli config username admin
+tower-cli config password your-ansible-twoer-admin-password
+tower-cli config verify_ssl false
+tower-cli config insecure true
+tower-cli config host http://192.168.49.2:30877
+tower-cli login admin
+tower-cli project list
+tower-cli job list
+tower-cli tower-cli job launch -J "Invoke Install nginx playbook"
+```
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/ddf8c9b5-7f7a-40a0-91e2-31ac028816d9" />
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/95892458-8e05-46b4-b3ba-44ce6979266a" />
