@@ -17,3 +17,4 @@ Fill up the fields as shown below
 
 Click Save
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/7fd0c677-205d-4550-9dba-e96c2551d725" />
+<img width="1854" height="1048" alt="image" src="https://github.com/user-attachments/assets/e57349e4-3a91-4124-8404-b9ab2b846d5e" />
