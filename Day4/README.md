@@ -201,6 +201,7 @@ Run the below command
 ```
 kubectl apply -f awx-demo.yml
 kubectl get svc -l "app.kubernetes.io/managed-by=awx-operator"
+kubectl get svc -n awx
 kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager -n awx
 kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
 ```
