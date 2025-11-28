@@ -4,7 +4,7 @@
   - nginx
 
 - name: Verify if nginx web pages are accessible
-  hosts: localhost
+  hosts: rocky1
   tasks:
   - name: Access the web page hosted by nginx web server
     shell: "curl http://192.168.1.80:8{{item}}"
