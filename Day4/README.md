@@ -264,7 +264,7 @@ sudo apt update && sudo apt install -y python3 python3-pip
 pip install ansible-tower-cli --break-system-packages --upgrade
 
 tower-cli config username admin
-tower-cli config password your-ansible-twoer-admin-password
+tower-cli config password your-ansible-tower-admin-password
 tower-cli config verify_ssl false
 tower-cli config insecure true
 tower-cli config host http://192.168.49.2:30877
